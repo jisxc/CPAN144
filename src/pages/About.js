@@ -38,16 +38,16 @@ export default function AboutPage() {
           </div>
           <div className="flex justify-center mb-8">
             <div className="flex gap-8">
-              <div className="w-24 h-24 flex flex-col items-center justify-center bg-gray-200 rounded-full overflow-hidden">
+              <div className="w-32 h-32 flex flex-col items-center justify-center bg-gray-200 rounded-full overflow-hidden">
                 <img src="/images/Ilker.jpg" alt="Ilker" className="w-full h-full object-cover" />
                 <div className="mt-2 text-sm font-medium">Ilker</div>
               </div>
-              <div className="w-24 h-24 flex flex-col items-center justify-center bg-gray-200 rounded-full overflow-hidden">
+              <div className="w-32 h-32 flex flex-col items-center justify-center bg-gray-200 rounded-full overflow-hidden">
                 <img src="/images/Kaila.jpg" alt="Kaila" className="w-full h-full object-cover" />
                 <div className="mt-2 text-sm font-medium">Kaila</div>
               </div>
-              <div className="w-24 h-24 flex flex-col items-center justify-center bg-gray-200 rounded-full overflow-hidden">
-                <img src="/images/AJi.jpg" alt="AJi" className="w-full h-full object-cover" />
+              <div className="w-32 h-32 flex flex-col items-center justify-center bg-gray-200 rounded-full overflow-hidden">
+                <img src="/images/AJi.jpg" alt="AJ" className="w-full h-full object-cover" />
                 <div className="mt-2 text-sm font-medium">AJ</div>
               </div>
             </div>
