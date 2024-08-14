@@ -38,14 +38,23 @@ export default function AboutPage() {
           </div>
           <div className="flex justify-center mb-8">
             <div className="flex gap-8">
-              <div className="w-32 h-32 flex items-center justify-center rounded-full overflow-hidden bg-transparent border border-gray-300">
+              <div className="flex flex-col items-center">
+                <div className="w-32 h-32 flex items-center justify-center rounded-full overflow-hidden bg-transparent border border-gray-300">
                 <img src="/images/Ilker.jpg" alt="Ilker" className="w-full h-full object-cover" />
+                </div>
+                <div className="mt-2 text-sm font-medium text-[#111616]">Ilker</div>
               </div>
-              <div className="w-32 h-32 flex items-center justify-center rounded-full overflow-hidden bg-transparent border border-gray-300">
+              <div className="flex flex-col items-center">
+                <div className="w-32 h-32 flex items-center justify-center rounded-full overflow-hidden bg-transparent border border-gray-300">
                 <img src="/images/Kaila.jpg" alt="Kaila" className="w-full h-full object-cover" />
+                </div>
+                <div className="mt-2 text-sm font-medium text-[#111616]">Kaila</div>
               </div>
-              <div className="w-32 h-32 flex items-center justify-center rounded-full overflow-hidden bg-transparent border border-gray-300">
+              <div className="flex flex-col items-center">
+                <div className="w-32 h-32 flex items-center justify-center rounded-full overflow-hidden bg-transparent border border-gray-300">
                 <img src="/images/AJi.jpg" alt="AJ" className="w-full h-full object-cover" />
+                </div>
+                <div className="mt-2 text-sm font-medium text-[#111616]">AJ</div>
               </div>
             </div>
           </div>
@@ -59,7 +68,7 @@ export default function AboutPage() {
               <input
                 type="text"
                 name="name"
-                placeholder="Your Name"
+                placeholder="Name"
                 value={formData.name}
                 onChange={handleChange}
                 className="p-3 border border-[#dbe2e5] rounded-lg"
@@ -68,7 +77,7 @@ export default function AboutPage() {
               <input
                 type="email"
                 name="email"
-                placeholder="Your Email"
+                placeholder="Email Address"
                 value={formData.email}
                 onChange={handleChange}
                 className="p-3 border border-[#dbe2e5] rounded-lg"
@@ -76,7 +85,7 @@ export default function AboutPage() {
               />
               <textarea
                 name="message"
-                placeholder="Your Message"
+                placeholder="Message"
                 value={formData.message}
                 onChange={handleChange}
                 className="p-3 border border-[#dbe2e5] rounded-lg"
