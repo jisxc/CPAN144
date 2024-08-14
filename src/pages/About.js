@@ -24,63 +24,78 @@ export default function AboutPage() {
 
   return (
     <>
-      <div className="w-[1280px] h-[800px] bg-white flex-col justify-start items-start inline-flex">
+      <div className="w-full max-w-[1280px] h-auto bg-white flex flex-col items-center">
         <Header />
-        <div className="self-stretch h-[800px] bg-white flex-col justify-start items-start flex">
-          <div className="self-stretch h-[800px] px-40 py-5 flex-col justify-start items-start flex">
-            <div className="self-stretch p-4 flex-col justify-start items-start inline-flex gap-6">
-              <div className="w-72 flex-col justify-start items-start inline-flex">
-                <div className="text-[#111616] text-[32px] font-bold font-['Plus Jakarta Sans'] leading-10">
-                  About CPAN144 Weather App
-                </div>
+        <div className="w-full max-w-[1280px] px-5 py-5">
+          <div className="text-center mb-8">
+            <div className="text-[#111616] text-[32px] font-bold font-['Plus Jakarta Sans'] leading-10">
+              About Us
+            </div>
+            <p className="text-[#111616] text-base font-normal font-['Plus Jakarta Sans'] leading-normal mt-4">
+              <p>The Weather App, developed by Group 4, offers precise and up-to-date weather forecasts to help you plan your day.</p>
+              <p>Featuring radar maps and severe weather alerts, our app ensures you stay well-informed about current weather conditions.</p>
+            </p>
+          </div>
+          <div className="flex justify-center mb-8">
+            <div className="flex gap-8">
+              <div className="w-24 h-24 flex flex-col items-center justify-center bg-gray-200 rounded-full overflow-hidden">
+                <img src="/images/Ilker.jpg" alt="Ilker" className="w-full h-full object-cover" />
+                <div className="mt-2 text-sm font-medium">Ilker</div>
               </div>
-              <div className="self-stretch text-[#111616] text-base font-normal font-['Plus Jakarta Sans'] leading-normal">
-                The CPAN144 Weather App provides accurate and timely weather forecasts to help you plan your day. With features like radar maps and severe weather alerts, our app ensures that you stay informed about the weather conditions.
+              <div className="w-24 h-24 flex flex-col items-center justify-center bg-gray-200 rounded-full overflow-hidden">
+                <img src="/images/Kaila.jpg" alt="Kaila" className="w-full h-full object-cover" />
+                <div className="mt-2 text-sm font-medium">Kaila</div>
               </div>
-              <div className="self-stretch h-10 flex-col justify-start items-start flex">
-                <div className="text-[#111616] text-[22px] font-bold font-['Plus Jakarta Sans'] leading-7">
-                  Contact Us
-                </div>
+              <div className="w-24 h-24 flex flex-col items-center justify-center bg-gray-200 rounded-full overflow-hidden">
+                <img src="/images/AJi.jpg" alt="AJi" className="w-full h-full object-cover" />
+                <div className="mt-2 text-sm font-medium">AJ</div>
               </div>
-              <form onSubmit={handleSubmit} className="w-full max-w-lg flex flex-col gap-4">
-                <input
-                  type="text"
-                  name="name"
-                  placeholder="Your Name"
-                  value={formData.name}
-                  onChange={handleChange}
-                  className="p-3 border border-[#dbe2e5] rounded-lg"
-                  required
-                />
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="Your Email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  className="p-3 border border-[#dbe2e5] rounded-lg"
-                  required
-                />
-                <textarea
-                  name="message"
-                  placeholder="Your Message"
-                  value={formData.message}
-                  onChange={handleChange}
-                  className="p-3 border border-[#dbe2e5] rounded-lg"
-                  rows="4"
-                  required
-                />
-                <button
-                  type="submit"
-                  className="bg-[#33b2e5] text-white py-3 px-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 ease-in-out"
-                >
-                  Send Message
-                </button>
-              </form>
             </div>
           </div>
-          <Footer />
+          <div className="text-center mb-8">
+            <h2 className="text-[#111616] text-[28px] font-bold font-['Plus Jakarta Sans'] leading-8">
+              Contact Us
+            </h2>
+          </div>
+          <div className="flex justify-center">
+            <form onSubmit={handleSubmit} className="w-full max-w-lg flex flex-col gap-4">
+              <input
+                type="text"
+                name="name"
+                placeholder="Your Name"
+                value={formData.name}
+                onChange={handleChange}
+                className="p-3 border border-[#dbe2e5] rounded-lg"
+                required
+              />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                value={formData.email}
+                onChange={handleChange}
+                className="p-3 border border-[#dbe2e5] rounded-lg"
+                required
+              />
+              <textarea
+                name="message"
+                placeholder="Your Message"
+                value={formData.message}
+                onChange={handleChange}
+                className="p-3 border border-[#dbe2e5] rounded-lg"
+                rows="4"
+                required
+              />
+              <button
+                type="submit"
+                className="bg-[#33b2e5] text-white py-3 px-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 ease-in-out"
+              >
+                Send Message
+              </button>
+            </form>
+          </div>
         </div>
+        <Footer />
       </div>
     </>
   );
