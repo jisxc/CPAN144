@@ -43,7 +43,7 @@ const Dashboard = () => {
   const chartUrl = generateChartUrl();
 
   return (
-    <div className="w-[1280px] h-[1214px] bg-white flex-col justify-start items-start inline-flex">
+    <div className="w-full max-w-[1280px] h-auto bg-white flex flex-col items-center mx-auto">
       <div className="self-stretch h-[1214px] bg-white flex-col justify-start items-start flex">
         <div className="self-stretch h-[1214px] flex-col justify-start items-start flex">
             <Header />
