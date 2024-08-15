@@ -24,7 +24,7 @@ export default function AboutPage() {
 
   return (
     <>
-      <div className="w-full max-w-[1280px] h-auto bg-white flex flex-col items-center">
+      <div className="w-full max-w-[1280px] h-auto bg-white flex flex-col items-center mx-auto">
         <Header />
         <div className="w-full max-w-[1280px] px-5 py-5">
           <div className="text-center mb-8">
