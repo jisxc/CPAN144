@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from 'react-router-dom';
+import TermsOfService from "../pages/TermsOfService";
 
 export default function Footer() {
     return (
@@ -25,6 +26,6 @@ export default function Footer() {
                   </div>
                 </div>
               </div>
-            </div>
-    )
+            </div>
+    )
 }
